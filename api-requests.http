@@ -1,0 +1,24 @@
+
+GET http://localhost:8080/rooms
+
+####
+POST http://localhost:8080/reservations
+Content-Type: application/json
+
+{
+    "roomId": "aa354842-59bf-42e6-be3a-6188dbb5fff8", 
+    "email": "jhon.doe@email.com", 
+    "checkinDate": "2024-03-28T10:00:00", 
+    "checkoutDate": "2024-04-15T10:00:00"
+}
+
+####
+POST http://localhost:8080/reservations
+Content-Type: application/json
+
+{
+    "roomId": "aa354842-59bf-42e6-be3a-6188dbb5fff8", 
+    "email": "jane.mary@email.com", 
+    "checkinDate": "2024-04-01T10:00:00", 
+    "checkoutDate": "2024-04-05T10:00:00"
+}
