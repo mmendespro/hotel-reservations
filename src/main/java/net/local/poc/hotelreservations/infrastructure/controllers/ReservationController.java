@@ -36,6 +36,6 @@ public class ReservationController {
     public ResponseEntity<String> makeReserve(@RequestBody ReservationInput input) {
         var result = makeReservationPort.execute(input);
         var uri = URI.create(String.format("/reservations/%s", result));
-        return ResponseEntity.created(uri).build();
+        return ResponseEntity.created(uri).body(result);
     }
 }
